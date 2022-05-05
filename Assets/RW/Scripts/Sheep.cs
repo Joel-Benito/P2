@@ -22,6 +22,7 @@ public class Sheep : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        runSpeed = Random.Range(5f, 15f);
         transform.Translate(Vector3.forward * runSpeed * Time.deltaTime);
     }
 
